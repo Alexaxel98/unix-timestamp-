@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Stamp Microservice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Unix Time Stamp Converter</h1>
+    <br/>
+    
+    <div>
+      <p><b>Today's Date: </b><%=todayDate%></p>
+      <p><b>Current Time Stamp:</b> <%=todayTimeStamp%></p>
+    </div>
+    
+    
+    
+    
+    <div class="container">
+      <div class="jumbotron">
+      <p> <h3><b>Instructions</b></h3></p>
+      <div>
+        <ol>
+        <li>In order to obtain Unix Time stamp from an alphabetic date, append your year, month and day into url using the following format <br><br>
+        <u>url/date?year=1991&month=01&day=28</u></li><br>
+        
+        <li>If you have a Unix Timestamp you want to convert to alphabetic date simply append your timestamp the following way
+        (note, input timestamp in milliseconds)<br><br>
+        <u>url/timestamp</u> </li>
+        </ol>
+    </div>
+      </div>
+    </div>
+  </body>
+</html>
